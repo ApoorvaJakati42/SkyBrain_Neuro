@@ -1,0 +1,10 @@
+const mongoose = require('mongoose');
+
+const excelFileSchema = new mongoose.Schema({
+    fileName: String, // Store the file name
+    fileData: Buffer, // Store the file data as a binary buffer
+});
+
+const ExcelFile = mongoose.model('ExcelFile', excelFileSchema);
+
+module.exports = ExcelFile;
