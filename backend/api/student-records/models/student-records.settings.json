@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_records",
+  "info": {
+    "name": "Student Records"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "StudentEmail": {
+      "type": "email"
+    },
+    "StudentAge": {
+      "type": "integer"
+    }
+  }
+}
